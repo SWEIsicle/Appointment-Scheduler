@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DBClientApplication.Controller.LogInController">
+   <children>
+      <Button fx:id="logIn" layoutX="351.0" layoutY="315.0" mnemonicParsing="false" onAction="#onActionLogIn" text="Log In" />
+      <Button fx:id="exit" layoutX="430.0" layoutY="315.0" mnemonicParsing="false" onAction="#onActionExit" text="Exit" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="53.0" prefHeight="42.0" prefWidth="201.0" text="Schedule" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="zoneId" layoutX="27.0" layoutY="357.0" text="ZoneId" />
+      <HBox layoutX="72.0" layoutY="143.0" prefHeight="100.0" prefWidth="325.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="111.0" spacing="60.0">
+               <children>
+                  <Label fx:id="userName" prefHeight="17.0" prefWidth="67.0" text="User Name" />
+                  <Label fx:id="password" prefHeight="17.0" prefWidth="107.0" text="Password" />
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="216.0" spacing="48.0">
+               <children>
+                  <PasswordField fx:id="userNameTxt" />
+                  <PasswordField fx:id="passwordTxt" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

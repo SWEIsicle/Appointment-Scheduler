@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DBClientApplication.Controller.UpdateAppointmentController">
+   <children>
+      <VBox layoutX="71.0" layoutY="65.0" prefHeight="227.0" prefWidth="149.0" spacing="7.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <TextField fx:id="IdTxt" disable="true" />
+            <TextField fx:id="TitleTxt" />
+            <TextField fx:id="DescriptionTxt" />
+            <TextField fx:id="LocationTxt" />
+            <ComboBox fx:id="ContactCB" prefWidth="150.0" />
+            <TextField fx:id="TypeTxt" />
+            <DatePicker fx:id="startDP" />
+            <TextField fx:id="CustomerIdTxt" />
+            <TextField fx:id="UserIdTxt" />
+         </children>
+      </VBox>
+      <Button fx:id="SubmitBtn" layoutX="402.0" layoutY="346.0" mnemonicParsing="false" onAction="#onActionSubmit" text="Submit" />
+      <Button fx:id="ExitBtn" layoutX="503.0" layoutY="346.0" mnemonicParsing="false" onAction="#onActionCancel" text="Exit" />
+      <VBox layoutX="244.0" layoutY="69.0" prefHeight="257.0" prefWidth="138.0" spacing="15.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label text="ID" />
+            <Label text="Title" />
+            <Label text="Description" />
+            <Label text="Location" />
+            <Label text="Contact" />
+            <Label text="Type" />
+            <Label text="Start Date and Time" />
+            <Label text="Customer ID" />
+            <Label text="User ID" />
+         </children>
+      </VBox>
+      <Label layoutX="388.0" layoutY="56.0" prefHeight="43.0" prefWidth="176.0" text="Update Appointment">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="251.0" text="Start Time" />
+      <Label layoutX="412.0" layoutY="285.0" text="End Time" />
+      <VBox layoutX="470.0" layoutY="247.0" prefHeight="60.0" prefWidth="75.0" spacing="10.0">
+         <children>
+            <TextField fx:id="startTxt" prefHeight="25.0" prefWidth="75.0" />
+            <TextField fx:id="endTxt" prefHeight="25.0" prefWidth="75.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DBClientApplication.Controller.AddCustomerController">
+   <children>
+      <VBox layoutX="71.0" layoutY="65.0" prefHeight="227.0" prefWidth="149.0" spacing="30.0">
+         <children>
+            <TextField fx:id="IdTxt" disable="true" />
+            <TextField fx:id="NameTxt" />
+            <TextField fx:id="AddressTxt" />
+            <TextField fx:id="PostalCodeTxt" />
+            <TextField fx:id="PhoneNumTxt" />
+            <ComboBox fx:id="countryCB" onAction="#onActonCountry" prefWidth="150.0" />
+            <ComboBox fx:id="fldCB" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <Button fx:id="SubmitBtn" layoutX="525.0" layoutY="395.0" mnemonicParsing="false" onAction="#onActionAddCustomer" text="Submit" />
+      <Button fx:id="ExitBtn" layoutX="619.0" layoutY="395.0" mnemonicParsing="false" onAction="#onActionCancel" text="Exit" />
+      <VBox layoutX="247.0" layoutY="65.0" prefHeight="257.0" prefWidth="138.0" spacing="39.0">
+         <children>
+            <Label text="ID" />
+            <Label text="Name" />
+            <Label text="Address" />
+            <Label text="Postal Code" />
+            <Label text="Phone Number" />
+            <Label text="Country" />
+            <Label text="First-level Division" />
+         </children>
+      </VBox>
+      <Label layoutX="408.0" layoutY="56.0" prefHeight="37.0" prefWidth="132.0" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

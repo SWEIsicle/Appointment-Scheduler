@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"DBClientApplication.Controller"},{"l":"DBClientApplication.Helper"},{"l":"DBClientApplication.Model"}];updateSearchResults();
